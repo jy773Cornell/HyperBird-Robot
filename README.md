@@ -25,7 +25,9 @@ HyperBird is a high-throughput hyperspectral microscopic imaging platform for pl
 
 RGB renderings from the hypercube, compared at **0 DPI** ([`leaf_samples_dpi0_processed`](data_examples/leaf_samples_dpi0_processed)) vs **6 DPI** ([`leaf_samples_dpi6_processed`](data_examples/leaf_samples_dpi6_processed)). Each row is one sample; thumbnails are scaled down to fit side by side.
 
-<table>
+<div align="center">
+
+<table width="70%">
   <tr>
     <th align="center" width="50%">0 DPI</th>
     <th align="center" width="50%">6 DPI</th>
@@ -68,11 +70,15 @@ RGB renderings from the hypercube, compared at **0 DPI** ([`leaf_samples_dpi0_pr
   </tr>
 </table>
 
+</div>
+
 ### Masks
 
 Segmentation overlay on RGB.
 
-<table>
+<div align="center">
+
+<table width="70%">
   <tr>
     <th align="center" width="50%">0 DPI</th>
     <th align="center" width="50%">6 DPI</th>
@@ -115,11 +121,15 @@ Segmentation overlay on RGB.
   </tr>
 </table>
 
+</div>
+
 ### Mean spectra
 
 ROI mean ± std.
 
-<table>
+<div align="center">
+
+<table width="70%">
   <tr>
     <th align="center" width="50%">0 DPI</th>
     <th align="center" width="50%">6 DPI</th>
@@ -165,6 +175,8 @@ ROI mean ± std.
     <td align="center"><b>010-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_dpi6_processed/010-DMTSLeaf3/010-DMTSLeaf3_roi_mean_std.svg" width="200" alt="010 spectra 6dpi"></td>
   </tr>
 </table>
+
+</div>
 
 ## Author
 
