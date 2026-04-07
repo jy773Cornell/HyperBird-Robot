@@ -2,49 +2,54 @@
 
 HyperBird is a high-throughput hyperspectral microscopic imaging platform for plant phenotyping, combining robotic sample scanning with automated spectral-image processing and analysis.
 
-<p align="center">
-  <img src="assets/hyperbird_system.png" alt="HyperBird system" width="60%">
-</p>
-
-<p align="center">
-  <a href="assets/hyperbird_in_action.mp4">
-    <img src="assets/hyperbird_in_action_preview.gif" alt="HyperBird in action (GIF preview)" width="60%">
-  </a>
-</p>
-
-<p align="center">
-  ▶️ <a href="assets/hyperbird_in_action.mp4"><strong>Open full video (MP4)</strong></a>
-</p>
+▶️ **Watch HyperBird in action (MP4)**
 
 ## Contents
 
-| Folder | Description |
-| ------ | ----------- |
-| [`hyperbird-proto/`](hyperbird-proto/) | Hardware system control software (Linux C++, camera-motion synchronization, tray scanning, ENVI output). |
-| [`hyperbird-studio/`](hyperbird-studio/) | Processing, calibration, and data analysis pipeline (watchers, segmentation, notebooks, model workflows). |
-| [`data_examples/`](data_examples/) | Example processed sample outputs for visualization and demos. |
-| [`assets/`](assets/) | README media assets. |
+
+| Folder                                   | Description                                                                                               |
+| ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| `[hyperbird-proto/](hyperbird-proto/)`   | Hardware system control software (Linux C++, camera-motion synchronization, tray scanning, ENVI output).  |
+| `[hyperbird-studio/](hyperbird-studio/)` | Processing, calibration, and data analysis pipeline (watchers, segmentation, notebooks, model workflows). |
+| `[data_examples/](data_examples/)`       | Example processed sample outputs for visualization and demos.                                             |
+| `[assets/](assets/)`                     | README media assets.                                                                                      |
+
+
 ## Sampel Images
 
-Leaf RGB examples from [`data_examples/`](data_examples/leaf_samples_processed/):
+Leaf samples (generated RGB images from Hypercube):
 
-<table>
-  <tr>
-    <td align="center"><b>002-white</b><br><img src="data_examples/leaf_samples_processed/002-white/002-white_rgb.png" width="220"></td>
-    <td align="center"><b>003-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/003-DMTSLeaf1/003-DMTSLeaf1_rgb.png" width="220"></td>
-    <td align="center"><b>004-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/004-DMTSLeaf1/004-DMTSLeaf1_rgb.png" width="220"></td>
-  </tr>
-  <tr>
-    <td align="center"><b>005-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/005-DMTSLeaf1/005-DMTSLeaf1_rgb.png" width="220"></td>
-    <td align="center"><b>006-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/006-DMTSLeaf2/006-DMTSLeaf2_rgb.png" width="220"></td>
-    <td align="center"><b>007-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/007-DMTSLeaf2/007-DMTSLeaf2_rgb.png" width="220"></td>
-  </tr>
-  <tr>
-    <td align="center"><b>008-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/008-DMTSLeaf2/008-DMTSLeaf2_rgb.png" width="220"></td>
-    <td align="center"><b>009-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/009-DMTSLeaf2/009-DMTSLeaf2_rgb.png" width="220"></td>
-    <td align="center"><b>010-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_processed/010-DMTSLeaf3/010-DMTSLeaf3_rgb.png" width="220"></td>
-  </tr>
-</table>
+
+|                   |                   |                   |
+| ----------------- | ----------------- | ----------------- |
+| **002-white**     | **003-DMTSLeaf1** | **004-DMTSLeaf1** |
+| **005-DMTSLeaf1** | **006-DMTSLeaf2** | **007-DMTSLeaf2** |
+| **008-DMTSLeaf2** | **009-DMTSLeaf2** | **010-DMTSLeaf3** |
+
+
+### Masks
+
+Segmentation overlays on RGB:
+
+
+|                   |                   |                   |
+| ----------------- | ----------------- | ----------------- |
+| **002-white**     | **003-DMTSLeaf1** | **004-DMTSLeaf1** |
+| **005-DMTSLeaf1** | **006-DMTSLeaf2** | **007-DMTSLeaf2** |
+| **008-DMTSLeaf2** | **009-DMTSLeaf2** | **010-DMTSLeaf3** |
+
+
+### Mean Spectra
+
+Per-sample ROI mean ± std:
+
+
+|                   |                   |                   |
+| ----------------- | ----------------- | ----------------- |
+| **002-white**     | **003-DMTSLeaf1** | **004-DMTSLeaf1** |
+| **005-DMTSLeaf1** | **006-DMTSLeaf2** | **007-DMTSLeaf2** |
+| **008-DMTSLeaf2** | **009-DMTSLeaf2** | **010-DMTSLeaf3** |
+
 
 ## Author
 
@@ -74,3 +79,4 @@ Yu, J., Brewer, A., Pippi, L., Hosseinzadeh, S., Moreno, J., Martinez, D., Chen,
   doi     = {TBD}
 }
 ```
+
