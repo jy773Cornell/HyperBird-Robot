@@ -1,0 +1,36 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments & secrets
+.env
+.env.*
+!.env.example
+
+# C/C++ build (common for control / acquisition code)
+build/
+cmake-build-*/
+*.o
+*.a
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs & temp
+*.log
+tmp/
+temp/
+
+# Large or local-only data — uncomment or extend as you organize folders
+# data/raw/
+# *.h5
+# *.tif
