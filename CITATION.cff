@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "HyperBird Microscopic Imaging Robot"
+type: software
+authors:
+  - family-names: "Yu"
+    given-names: "Jinhong"
+    affiliation: "Cornell AgriTech, Cornell University"
+    email: "yujiang@cornell.edu"
+repository-code: "https://github.com/jy773Cornell/hyperbird"
+keywords:
+  - hyperspectral imaging
+  - plant phenotyping
+  - robotics
+  - microscopy
+license: "MIT"
+preferred-citation:
+  type: article
+  title: "HyperBird: A Hyperspectral Microscopic Imaging Robot for High Throughput Plant Phenotyping"
+  authors:
+    - family-names: "Yu"
+      given-names: "Jinhong"
+    - family-names: "Brewer"
+      given-names: "Aliyah"
+    - family-names: "Pippi"
+      given-names: "Lorenzo"
+    - family-names: "Hosseinzadeh"
+      given-names: "Saeed"
+    - family-names: "Moreno"
+      given-names: "Javier"
+    - family-names: "Martinez"
+      given-names: "Dani"
+    - family-names: "Chen"
+      given-names: "Chang"
+    - family-names: "Gold"
+      given-names: "Kaitlin M."
+    - family-names: "Cadle-Davidson"
+      given-names: "Lance"
+    - family-names: "Jiang"
+      given-names: "Yu"
+  journal: "TBD"
+  year: 2026

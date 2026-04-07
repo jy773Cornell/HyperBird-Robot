@@ -1,60 +1,76 @@
-# HyperBird — software and data
+# HyperBird Microscopic Imaging Robot
 
-This repository contains **hardware control software** and **processing / analysis** code for the HyperBird hyperspectral microscopic imaging robot. It does **not** include the LaTeX manuscript; that is maintained separately.
+HyperBird is a high-throughput hyperspectral microscopic imaging platform for plant phenotyping, combining robotic sample scanning with automated spectral-image processing and analysis.
 
-HyperBird combines:
-- A Linux C++ scanner controller for camera-motion synchronization and tray-based acquisition.
-- A Python/Jupyter processing stack for flat-field correction, ENVI-to-analysis conversion, segmentation, and downstream disease modeling.
+<p align="center">
+  <img src="assets/hyperbird_system.png" alt="HyperBird system" width="80%">
+</p>
 
-## Layout
+<p align="center">
+  <a href="assets/hyperbird_in_action.mp4">
+    <img src="assets/hyperbird_system.png" alt="Watch HyperBird in action (MP4)" width="80%">
+  </a>
+</p>
 
+<p align="center">
+  ▶️ <a href="assets/hyperbird_in_action.mp4"><strong>Watch HyperBird in action (MP4)</strong></a>
+</p>
 
-| Path                                     | Role                                                                                                                                                |
-| ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `[hyperbird-proto/](hyperbird-proto/)`   | Linux C++ application: motion stage, camera (Andor), tray scanning, ENVI output.                                                                    |
-| `[hyperbird-studio/](hyperbird-studio/)` | Python/Jupyter: live processing watchers, flat-field and ENVI→Zarr pipeline, GSAM2 segmentation, calibration notebooks, disease-analysis notebooks. |
-| `data/`                                  | Optional place for shared datasets or symlinks (empty by default).                                                                                  |
-| `assets/`                                | Project media assets (system photo and action video).                                                                                               |
+## Contents
 
+| Folder | Description |
+| ------ | ----------- |
+| [`hyperbird-proto/`](hyperbird-proto/) | Hardware system control software (Linux C++, camera-motion synchronization, tray scanning, ENVI output). |
+| [`hyperbird-studio/`](hyperbird-studio/) | Processing, calibration, and data analysis pipeline (watchers, segmentation, notebooks, model workflows). |
+| [`data_examples/`](data_examples/) | Example processed sample outputs for visualization and demos. |
+| [`assets/`](assets/) | README media assets. |
+## Sampel Images
 
-## hyperbird-proto (scanner control)
+Leaf RGB examples from [`data_examples/leaf_samples_processed/`](data_examples/leaf_samples_processed/):
 
-- Builds with `make` → executable `hyperbird` (see `[hyperbird-proto/Makefile](hyperbird-proto/Makefile)`).
-- Requires **Andor SDK** (camera) and **xlnt** (Excel tray labels); see `[hyperbird-proto/README.md](hyperbird-proto/README.md)`.
-- Typical run: `./hyperbird <labels.xlsx> <cfg/some.cfg>` — output root is configured for your machine (e.g. under `/home/hyperbird/Hyperimages`).
+<table>
+  <tr>
+    <td align="center"><b>002-white</b><br><img src="data_examples/leaf_samples_processed/002-white/002-white_rgb.png" width="220"></td>
+    <td align="center"><b>003-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/003-DMTSLeaf1/003-DMTSLeaf1_rgb.png" width="220"></td>
+    <td align="center"><b>004-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/004-DMTSLeaf1/004-DMTSLeaf1_rgb.png" width="220"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>005-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/005-DMTSLeaf1/005-DMTSLeaf1_rgb.png" width="220"></td>
+    <td align="center"><b>006-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/006-DMTSLeaf2/006-DMTSLeaf2_rgb.png" width="220"></td>
+    <td align="center"><b>007-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/007-DMTSLeaf2/007-DMTSLeaf2_rgb.png" width="220"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>008-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/008-DMTSLeaf2/008-DMTSLeaf2_rgb.png" width="220"></td>
+    <td align="center"><b>009-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/009-DMTSLeaf2/009-DMTSLeaf2_rgb.png" width="220"></td>
+    <td align="center"><b>010-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_processed/010-DMTSLeaf3/010-DMTSLeaf3_rgb.png" width="220"></td>
+  </tr>
+</table>
 
-## hyperbird-studio (processing & analysis)
+## Author
 
-- Install the package in editable mode from `hyperbird-studio/` (`pip install -e .`) or use the provided **Dockerfile** / **devcontainer**.
-- **SAM 2** weights are **not** in git: download checkpoints into `hyperbird-studio/sam2/checkpoints/` (see `download_ckpts.sh` there).
-- **Watchers** (`processing/hyperbird_watcher1.ipynb`, `hyperbird_watcher2.ipynb`): run *before* a scan to watch a directory for new ENVI pairs and write `_processed` outputs (RGB, masks, ROI spectra). Details: `[hyperbird-studio/README.md](hyperbird-studio/README.md)`.
-- **Calibration**: notebooks under `hyperbird-studio/calibration/` (spectral, spatial, depth of field).
-- **Disease / stats pipelines**: notebooks under `hyperbird-studio/disease_detection/`.
-- **Trained models** (e.g. `*.joblib` under `models/`).
+- **Jinhong Yu**
+- Cornell AgriTech, Cornell University
+- Contact: `yujiang@cornell.edu`
 
-## Git
+## Publication and Citation
 
-Single repository at this root. Nested `.git` directories under `hyperbird-proto` and `hyperbird-studio` were removed so everything is tracked here.
+If you use this repository, please cite the HyperBird manuscript.
 
-Optional: configure [nbstripout](https://github.com/kynan/nbstripout) so `.gitattributes` strips notebook outputs on commit.
+### Citation (plain text)
 
-## Assets
+Yu, J., Brewer, A., Pippi, L., Hosseinzadeh, S., Moreno, J., Martinez, D., Chen, C., Gold, K. M., Cadle-Davidson, L., and Jiang, Y. HyperBird: A hyperspectral microscopic imaging robot for high-throughput plant phenotyping.
 
-Media for documentation and repository overview live in [`assets/`](assets/). **PNG and MP4** render on GitHub; **HEIC** is the optional camera-original still image.
+### Citation (BibTeX)
 
-### System photo
-
-![HyperBird system](assets/hyperbird_system.png)
-
-| Format | File |
-| ------ | ---- |
-| **PNG** (preview) | [`assets/hyperbird_system.png`](assets/hyperbird_system.png) |
-| HEIC (original) | [`assets/hyperbird_system.heic`](assets/hyperbird_system.heic) |
-
-### In-action video
-
-<video src="assets/hyperbird_in_action.mp4" controls width="100%"></video>
-
-| Format | File |
-| ------ | ---- |
-| **MP4** (playback in browser) | [`assets/hyperbird_in_action.mp4`](assets/hyperbird_in_action.mp4) |
+```bibtex
+@article{yu_hyperbird,
+  title   = {HyperBird: A Hyperspectral Microscopic Imaging Robot for High Throughput Plant Phenotyping},
+  author  = {Yu, Jinhong and Brewer, Aliyah and Pippi, Lorenzo and Hosseinzadeh, Saeed and Moreno, Javier and Martinez, Dani and Chen, Chang and Gold, Kaitlin M. and Cadle-Davidson, Lance and Jiang, Yu},
+  journal = {TBD},
+  year    = {TBD},
+  volume  = {TBD},
+  number  = {TBD},
+  pages   = {TBD},
+  doi     = {TBD}
+}
+```
