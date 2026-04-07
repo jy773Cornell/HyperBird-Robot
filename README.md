@@ -18,72 +18,151 @@ HyperBird is a high-throughput hyperspectral microscopic imaging platform for pl
 | ------ | ----------- |
 | [`hyperbird-proto/`](hyperbird-proto/) | Scanner control (Linux C++, motion + camera, ENVI output). |
 | [`hyperbird-studio/`](hyperbird-studio/) | Processing, calibration, analysis (watchers, segmentation, notebooks). |
-| [`data_examples/`](data_examples/) | Example processed outputs for demos. |
+| [`data_examples/`](data_examples/) | Example outputs: **`leaf_samples_dpi0_processed`** (0 DPI) and **`leaf_samples_dpi6_processed`** (6 DPI). |
 | [`assets/`](assets/) | README media (photos, GIF preview, MP4). |
 
 ## Sample images
 
-RGB renderings generated from hypercube.
+RGB renderings from the hypercube, compared at **0 DPI** ([`leaf_samples_dpi0_processed`](data_examples/leaf_samples_dpi0_processed)) vs **6 DPI** ([`leaf_samples_dpi6_processed`](data_examples/leaf_samples_dpi6_processed)). Each row is one sample; thumbnails are scaled down to fit side by side.
 
 <table>
   <tr>
-    <td align="center"><b>002-white</b><br><img src="data_examples/leaf_samples_processed/002-white/002-white_rgb.png" width="220" alt="002 RGB"></td>
-    <td align="center"><b>003-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/003-DMTSLeaf1/003-DMTSLeaf1_rgb.png" width="220" alt="003 RGB"></td>
-    <td align="center"><b>004-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/004-DMTSLeaf1/004-DMTSLeaf1_rgb.png" width="220" alt="004 RGB"></td>
+    <th align="center" width="50%">0 DPI</th>
+    <th align="center" width="50%">6 DPI</th>
   </tr>
   <tr>
-    <td align="center"><b>005-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/005-DMTSLeaf1/005-DMTSLeaf1_rgb.png" width="220" alt="005 RGB"></td>
-    <td align="center"><b>006-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/006-DMTSLeaf2/006-DMTSLeaf2_rgb.png" width="220" alt="006 RGB"></td>
-    <td align="center"><b>007-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/007-DMTSLeaf2/007-DMTSLeaf2_rgb.png" width="220" alt="007 RGB"></td>
+    <td align="center"><b>002-white</b><br><img src="data_examples/leaf_samples_dpi0_processed/002-white/002-white_rgb.png" width="140" alt="002 RGB 0dpi"></td>
+    <td align="center"><b>002-white</b><br><img src="data_examples/leaf_samples_dpi6_processed/002-white/002-white_rgb.png" width="140" alt="002 RGB 6dpi"></td>
   </tr>
   <tr>
-    <td align="center"><b>008-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/008-DMTSLeaf2/008-DMTSLeaf2_rgb.png" width="220" alt="008 RGB"></td>
-    <td align="center"><b>009-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/009-DMTSLeaf2/009-DMTSLeaf2_rgb.png" width="220" alt="009 RGB"></td>
-    <td align="center"><b>010-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_processed/010-DMTSLeaf3/010-DMTSLeaf3_rgb.png" width="220" alt="010 RGB"></td>
+    <td align="center"><b>003-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi0_processed/003-DMTSLeaf1/003-DMTSLeaf1_rgb.png" width="140" alt="003 RGB 0dpi"></td>
+    <td align="center"><b>003-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi6_processed/003-DMTSLeaf1/003-DMTSLeaf1_rgb.png" width="140" alt="003 RGB 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>004-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi0_processed/004-DMTSLeaf1/004-DMTSLeaf1_rgb.png" width="140" alt="004 RGB 0dpi"></td>
+    <td align="center"><b>004-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi6_processed/004-DMTSLeaf1/004-DMTSLeaf1_rgb.png" width="140" alt="004 RGB 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>005-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi0_processed/005-DMTSLeaf1/005-DMTSLeaf1_rgb.png" width="140" alt="005 RGB 0dpi"></td>
+    <td align="center"><b>005-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi6_processed/005-DMTSLeaf1/005-DMTSLeaf1_rgb.png" width="140" alt="005 RGB 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>006-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_dpi0_processed/006-DMTSLeaf3/006-DMTSLeaf3_rgb.png" width="140" alt="006 RGB 0dpi"></td>
+    <td align="center"><b>006-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_dpi6_processed/006-DMTSLeaf3/006-DMTSLeaf3_rgb.png" width="140" alt="006 RGB 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>007-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi0_processed/007-DMTSLeaf2/007-DMTSLeaf2_rgb.png" width="140" alt="007 RGB 0dpi"></td>
+    <td align="center"><b>007-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi6_processed/007-DMTSLeaf2/007-DMTSLeaf2_rgb.png" width="140" alt="007 RGB 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>008-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi0_processed/008-DMTSLeaf2/008-DMTSLeaf2_rgb.png" width="140" alt="008 RGB 0dpi"></td>
+    <td align="center"><b>008-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi6_processed/008-DMTSLeaf2/008-DMTSLeaf2_rgb.png" width="140" alt="008 RGB 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>009-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi0_processed/009-DMTSLeaf2/009-DMTSLeaf2_rgb.png" width="140" alt="009 RGB 0dpi"></td>
+    <td align="center"><b>009-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi6_processed/009-DMTSLeaf2/009-DMTSLeaf2_rgb.png" width="140" alt="009 RGB 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>010-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_dpi0_processed/010-DMTSLeaf3/010-DMTSLeaf3_rgb.png" width="140" alt="010 RGB 0dpi"></td>
+    <td align="center"><b>010-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_dpi6_processed/010-DMTSLeaf3/010-DMTSLeaf3_rgb.png" width="140" alt="010 RGB 6dpi"></td>
   </tr>
 </table>
 
 ### Masks
 
-Segmentation overlays on RGB.
+Segmentation overlay on RGB.
 
 <table>
   <tr>
-    <td align="center"><b>002-white</b> (mask)<br><img src="data_examples/leaf_samples_processed/002-white/002-white_mask.png" width="220" alt="002 mask"></td>
-    <td align="center"><b>003-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/003-DMTSLeaf1/003-DMTSLeaf1_mask_overlay.png" width="220" alt="003 overlay"></td>
-    <td align="center"><b>004-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/004-DMTSLeaf1/004-DMTSLeaf1_mask_overlay.png" width="220" alt="004 overlay"></td>
+    <th align="center" width="50%">0 DPI</th>
+    <th align="center" width="50%">6 DPI</th>
   </tr>
   <tr>
-    <td align="center"><b>005-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/005-DMTSLeaf1/005-DMTSLeaf1_mask_overlay.png" width="220" alt="005 overlay"></td>
-    <td align="center"><b>006-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/006-DMTSLeaf2/006-DMTSLeaf2_mask_overlay.png" width="220" alt="006 overlay"></td>
-    <td align="center"><b>007-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/007-DMTSLeaf2/007-DMTSLeaf2_mask_overlay.png" width="220" alt="007 overlay"></td>
+    <td align="center"><b>002-white</b><br><img src="data_examples/leaf_samples_dpi0_processed/002-white/002-white_mask.png" width="140" alt="002 mask 0dpi"></td>
+    <td align="center"><b>002-white</b><br><img src="data_examples/leaf_samples_dpi6_processed/002-white/002-white_mask.png" width="140" alt="002 mask 6dpi"></td>
   </tr>
   <tr>
-    <td align="center"><b>008-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/008-DMTSLeaf2/008-DMTSLeaf2_mask_overlay.png" width="220" alt="008 overlay"></td>
-    <td align="center"><b>009-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/009-DMTSLeaf2/009-DMTSLeaf2_mask_overlay.png" width="220" alt="009 overlay"></td>
-    <td align="center"><b>010-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_processed/010-DMTSLeaf3/010-DMTSLeaf3_mask_overlay.png" width="220" alt="010 overlay"></td>
+    <td align="center"><b>003-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi0_processed/003-DMTSLeaf1/003-DMTSLeaf1_mask_overlay.png" width="140" alt="003 mask 0dpi"></td>
+    <td align="center"><b>003-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi6_processed/003-DMTSLeaf1/003-DMTSLeaf1_mask_overlay.png" width="140" alt="003 mask 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>004-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi0_processed/004-DMTSLeaf1/004-DMTSLeaf1_mask_overlay.png" width="140" alt="004 mask 0dpi"></td>
+    <td align="center"><b>004-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi6_processed/004-DMTSLeaf1/004-DMTSLeaf1_mask_overlay.png" width="140" alt="004 mask 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>005-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi0_processed/005-DMTSLeaf1/005-DMTSLeaf1_mask_overlay.png" width="140" alt="005 mask 0dpi"></td>
+    <td align="center"><b>005-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi6_processed/005-DMTSLeaf1/005-DMTSLeaf1_mask_overlay.png" width="140" alt="005 mask 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>006-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_dpi0_processed/006-DMTSLeaf3/006-DMTSLeaf3_mask_overlay.png" width="140" alt="006 mask 0dpi"></td>
+    <td align="center"><b>006-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_dpi6_processed/006-DMTSLeaf3/006-DMTSLeaf3_mask_overlay.png" width="140" alt="006 mask 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>007-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi0_processed/007-DMTSLeaf2/007-DMTSLeaf2_mask_overlay.png" width="140" alt="007 mask 0dpi"></td>
+    <td align="center"><b>007-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi6_processed/007-DMTSLeaf2/007-DMTSLeaf2_mask_overlay.png" width="140" alt="007 mask 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>008-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi0_processed/008-DMTSLeaf2/008-DMTSLeaf2_mask_overlay.png" width="140" alt="008 mask 0dpi"></td>
+    <td align="center"><b>008-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi6_processed/008-DMTSLeaf2/008-DMTSLeaf2_mask_overlay.png" width="140" alt="008 mask 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>009-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi0_processed/009-DMTSLeaf2/009-DMTSLeaf2_mask_overlay.png" width="140" alt="009 mask 0dpi"></td>
+    <td align="center"><b>009-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi6_processed/009-DMTSLeaf2/009-DMTSLeaf2_mask_overlay.png" width="140" alt="009 mask 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>010-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_dpi0_processed/010-DMTSLeaf3/010-DMTSLeaf3_mask_overlay.png" width="140" alt="010 mask 0dpi"></td>
+    <td align="center"><b>010-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_dpi6_processed/010-DMTSLeaf3/010-DMTSLeaf3_mask_overlay.png" width="140" alt="010 mask 6dpi"></td>
   </tr>
 </table>
 
 ### Mean spectra
- 
- ROI mean ± std.
+
+ROI mean ± std.
 
 <table>
   <tr>
-    <td align="center"><b>002-white</b><br><img src="data_examples/leaf_samples_processed/002-white/002-white_white_ref_plot.svg" width="280" alt="002 spectra"></td>
-    <td align="center"><b>003-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/003-DMTSLeaf1/003-DMTSLeaf1_roi_mean_std.svg" width="280" alt="003 spectra"></td>
-    <td align="center"><b>004-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/004-DMTSLeaf1/004-DMTSLeaf1_roi_mean_std.svg" width="280" alt="004 spectra"></td>
+    <th align="center" width="50%">0 DPI</th>
+    <th align="center" width="50%">6 DPI</th>
   </tr>
   <tr>
-    <td align="center"><b>005-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/005-DMTSLeaf1/005-DMTSLeaf1_roi_mean_std.svg" width="280" alt="005 spectra"></td>
-    <td align="center"><b>006-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/006-DMTSLeaf2/006-DMTSLeaf2_roi_mean_std.svg" width="280" alt="006 spectra"></td>
-    <td align="center"><b>007-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/007-DMTSLeaf2/007-DMTSLeaf2_roi_mean_std.svg" width="280" alt="007 spectra"></td>
+    <td align="center"><b>001-black</b><br><img src="data_examples/leaf_samples_dpi0_processed/001-black/001-black_black_ref_plot.svg" width="200" alt="001 black 0dpi"></td>
+    <td align="center"><b>001-black</b><br><img src="data_examples/leaf_samples_dpi6_processed/001-black/001-black_black_ref_plot.svg" width="200" alt="001 black 6dpi"></td>
   </tr>
   <tr>
-    <td align="center"><b>008-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/008-DMTSLeaf2/008-DMTSLeaf2_roi_mean_std.svg" width="280" alt="008 spectra"></td>
-    <td align="center"><b>009-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/009-DMTSLeaf2/009-DMTSLeaf2_roi_mean_std.svg" width="280" alt="009 spectra"></td>
-    <td align="center"><b>010-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_processed/010-DMTSLeaf3/010-DMTSLeaf3_roi_mean_std.svg" width="280" alt="010 spectra"></td>
+    <td align="center"><b>002-white</b><br><img src="data_examples/leaf_samples_dpi0_processed/002-white/002-white_white_ref_plot.svg" width="200" alt="002 white 0dpi"></td>
+    <td align="center"><b>002-white</b><br><img src="data_examples/leaf_samples_dpi6_processed/002-white/002-white_white_ref_plot.svg" width="200" alt="002 white 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>003-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi0_processed/003-DMTSLeaf1/003-DMTSLeaf1_roi_mean_std.svg" width="200" alt="003 spectra 0dpi"></td>
+    <td align="center"><b>003-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi6_processed/003-DMTSLeaf1/003-DMTSLeaf1_roi_mean_std.svg" width="200" alt="003 spectra 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>004-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi0_processed/004-DMTSLeaf1/004-DMTSLeaf1_roi_mean_std.svg" width="200" alt="004 spectra 0dpi"></td>
+    <td align="center"><b>004-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi6_processed/004-DMTSLeaf1/004-DMTSLeaf1_roi_mean_std.svg" width="200" alt="004 spectra 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>005-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi0_processed/005-DMTSLeaf1/005-DMTSLeaf1_roi_mean_std.svg" width="200" alt="005 spectra 0dpi"></td>
+    <td align="center"><b>005-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_dpi6_processed/005-DMTSLeaf1/005-DMTSLeaf1_roi_mean_std.svg" width="200" alt="005 spectra 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>006-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_dpi0_processed/006-DMTSLeaf3/006-DMTSLeaf3_roi_mean_std.svg" width="200" alt="006 spectra 0dpi"></td>
+    <td align="center"><b>006-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_dpi6_processed/006-DMTSLeaf3/006-DMTSLeaf3_roi_mean_std.svg" width="200" alt="006 spectra 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>007-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi0_processed/007-DMTSLeaf2/007-DMTSLeaf2_roi_mean_std.svg" width="200" alt="007 spectra 0dpi"></td>
+    <td align="center"><b>007-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi6_processed/007-DMTSLeaf2/007-DMTSLeaf2_roi_mean_std.svg" width="200" alt="007 spectra 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>008-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi0_processed/008-DMTSLeaf2/008-DMTSLeaf2_roi_mean_std.svg" width="200" alt="008 spectra 0dpi"></td>
+    <td align="center"><b>008-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi6_processed/008-DMTSLeaf2/008-DMTSLeaf2_roi_mean_std.svg" width="200" alt="008 spectra 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>009-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi0_processed/009-DMTSLeaf2/009-DMTSLeaf2_roi_mean_std.svg" width="200" alt="009 spectra 0dpi"></td>
+    <td align="center"><b>009-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_dpi6_processed/009-DMTSLeaf2/009-DMTSLeaf2_roi_mean_std.svg" width="200" alt="009 spectra 6dpi"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>010-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_dpi0_processed/010-DMTSLeaf3/010-DMTSLeaf3_roi_mean_std.svg" width="200" alt="010 spectra 0dpi"></td>
+    <td align="center"><b>010-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_dpi6_processed/010-DMTSLeaf3/010-DMTSLeaf3_roi_mean_std.svg" width="200" alt="010 spectra 6dpi"></td>
   </tr>
 </table>
 
