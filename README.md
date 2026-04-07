@@ -2,54 +2,90 @@
 
 HyperBird is a high-throughput hyperspectral microscopic imaging platform for plant phenotyping, combining robotic sample scanning with automated spectral-image processing and analysis.
 
-▶️ **Watch HyperBird in action (MP4)**
+<p align="center">
+  <img src="assets/hyperbird_system.png" alt="HyperBird system" width="65%">
+</p>
+
+<p align="center">
+  <a href="assets/hyperbird_in_action.mp4"><img src="assets/hyperbird_in_action_preview.gif" alt="HyperBird in action (preview)" width="65%"></a>
+</p>
+
+<p align="center"><a href="assets/hyperbird_in_action.mp4"><strong>▶ Open full video (MP4)</strong></a></p>
 
 ## Contents
 
+| Folder | Description |
+| ------ | ----------- |
+| [`hyperbird-proto/`](hyperbird-proto/) | Scanner control (Linux C++, motion + camera, ENVI output). |
+| [`hyperbird-studio/`](hyperbird-studio/) | Processing, calibration, analysis (watchers, segmentation, notebooks). |
+| [`data_examples/`](data_examples/) | Example processed outputs for demos. |
+| [`assets/`](assets/) | README media (photos, GIF preview, MP4). |
 
-| Folder                                   | Description                                                                                               |
-| ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `[hyperbird-proto/](hyperbird-proto/)`   | Hardware system control software (Linux C++, camera-motion synchronization, tray scanning, ENVI output).  |
-| `[hyperbird-studio/](hyperbird-studio/)` | Processing, calibration, and data analysis pipeline (watchers, segmentation, notebooks, model workflows). |
-| `[data_examples/](data_examples/)`       | Example processed sample outputs for visualization and demos.                                             |
-| `[assets/](assets/)`                     | README media assets.                                                                                      |
+## Sample images
 
+RGB renderings generated from hypercube.
 
-## Sampel Images
-
-Leaf samples (generated RGB images from Hypercube):
-
-
-|                   |                   |                   |
-| ----------------- | ----------------- | ----------------- |
-| **002-white**     | **003-DMTSLeaf1** | **004-DMTSLeaf1** |
-| **005-DMTSLeaf1** | **006-DMTSLeaf2** | **007-DMTSLeaf2** |
-| **008-DMTSLeaf2** | **009-DMTSLeaf2** | **010-DMTSLeaf3** |
-
+<table>
+  <tr>
+    <td align="center"><b>002-white</b><br><img src="data_examples/leaf_samples_processed/002-white/002-white_rgb.png" width="220" alt="002 RGB"></td>
+    <td align="center"><b>003-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/003-DMTSLeaf1/003-DMTSLeaf1_rgb.png" width="220" alt="003 RGB"></td>
+    <td align="center"><b>004-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/004-DMTSLeaf1/004-DMTSLeaf1_rgb.png" width="220" alt="004 RGB"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>005-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/005-DMTSLeaf1/005-DMTSLeaf1_rgb.png" width="220" alt="005 RGB"></td>
+    <td align="center"><b>006-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/006-DMTSLeaf2/006-DMTSLeaf2_rgb.png" width="220" alt="006 RGB"></td>
+    <td align="center"><b>007-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/007-DMTSLeaf2/007-DMTSLeaf2_rgb.png" width="220" alt="007 RGB"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>008-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/008-DMTSLeaf2/008-DMTSLeaf2_rgb.png" width="220" alt="008 RGB"></td>
+    <td align="center"><b>009-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/009-DMTSLeaf2/009-DMTSLeaf2_rgb.png" width="220" alt="009 RGB"></td>
+    <td align="center"><b>010-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_processed/010-DMTSLeaf3/010-DMTSLeaf3_rgb.png" width="220" alt="010 RGB"></td>
+  </tr>
+</table>
 
 ### Masks
 
-Segmentation overlays on RGB:
+Segmentation overlays on RGB.
 
+<table>
+  <tr>
+    <td align="center"><b>002-white</b> (mask)<br><img src="data_examples/leaf_samples_processed/002-white/002-white_mask.png" width="220" alt="002 mask"></td>
+    <td align="center"><b>003-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/003-DMTSLeaf1/003-DMTSLeaf1_mask_overlay.png" width="220" alt="003 overlay"></td>
+    <td align="center"><b>004-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/004-DMTSLeaf1/004-DMTSLeaf1_mask_overlay.png" width="220" alt="004 overlay"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>005-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/005-DMTSLeaf1/005-DMTSLeaf1_mask_overlay.png" width="220" alt="005 overlay"></td>
+    <td align="center"><b>006-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/006-DMTSLeaf2/006-DMTSLeaf2_mask_overlay.png" width="220" alt="006 overlay"></td>
+    <td align="center"><b>007-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/007-DMTSLeaf2/007-DMTSLeaf2_mask_overlay.png" width="220" alt="007 overlay"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>008-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/008-DMTSLeaf2/008-DMTSLeaf2_mask_overlay.png" width="220" alt="008 overlay"></td>
+    <td align="center"><b>009-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/009-DMTSLeaf2/009-DMTSLeaf2_mask_overlay.png" width="220" alt="009 overlay"></td>
+    <td align="center"><b>010-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_processed/010-DMTSLeaf3/010-DMTSLeaf3_mask_overlay.png" width="220" alt="010 overlay"></td>
+  </tr>
+</table>
 
-|                   |                   |                   |
-| ----------------- | ----------------- | ----------------- |
-| **002-white**     | **003-DMTSLeaf1** | **004-DMTSLeaf1** |
-| **005-DMTSLeaf1** | **006-DMTSLeaf2** | **007-DMTSLeaf2** |
-| **008-DMTSLeaf2** | **009-DMTSLeaf2** | **010-DMTSLeaf3** |
+### Mean spectra
+ 
+ ROI mean ± std.
 
-
-### Mean Spectra
-
-Per-sample ROI mean ± std:
-
-
-|                   |                   |                   |
-| ----------------- | ----------------- | ----------------- |
-| **002-white**     | **003-DMTSLeaf1** | **004-DMTSLeaf1** |
-| **005-DMTSLeaf1** | **006-DMTSLeaf2** | **007-DMTSLeaf2** |
-| **008-DMTSLeaf2** | **009-DMTSLeaf2** | **010-DMTSLeaf3** |
-
+<table>
+  <tr>
+    <td align="center"><b>002-white</b><br><img src="data_examples/leaf_samples_processed/002-white/002-white_white_ref_plot.svg" width="280" alt="002 spectra"></td>
+    <td align="center"><b>003-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/003-DMTSLeaf1/003-DMTSLeaf1_roi_mean_std.svg" width="280" alt="003 spectra"></td>
+    <td align="center"><b>004-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/004-DMTSLeaf1/004-DMTSLeaf1_roi_mean_std.svg" width="280" alt="004 spectra"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>005-DMTSLeaf1</b><br><img src="data_examples/leaf_samples_processed/005-DMTSLeaf1/005-DMTSLeaf1_roi_mean_std.svg" width="280" alt="005 spectra"></td>
+    <td align="center"><b>006-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/006-DMTSLeaf2/006-DMTSLeaf2_roi_mean_std.svg" width="280" alt="006 spectra"></td>
+    <td align="center"><b>007-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/007-DMTSLeaf2/007-DMTSLeaf2_roi_mean_std.svg" width="280" alt="007 spectra"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>008-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/008-DMTSLeaf2/008-DMTSLeaf2_roi_mean_std.svg" width="280" alt="008 spectra"></td>
+    <td align="center"><b>009-DMTSLeaf2</b><br><img src="data_examples/leaf_samples_processed/009-DMTSLeaf2/009-DMTSLeaf2_roi_mean_std.svg" width="280" alt="009 spectra"></td>
+    <td align="center"><b>010-DMTSLeaf3</b><br><img src="data_examples/leaf_samples_processed/010-DMTSLeaf3/010-DMTSLeaf3_roi_mean_std.svg" width="280" alt="010 spectra"></td>
+  </tr>
+</table>
 
 ## Author
 
@@ -79,4 +115,3 @@ Yu, J., Brewer, A., Pippi, L., Hosseinzadeh, S., Moreno, J., Martinez, D., Chen,
   doi     = {TBD}
 }
 ```
-
