@@ -2,6 +2,10 @@
 
 This repository contains **hardware control software** and **processing / analysis** code for the HyperBird hyperspectral microscopic imaging robot. It does **not** include the LaTeX manuscript; that is maintained separately.
 
+HyperBird combines:
+- A Linux C++ scanner controller for camera-motion synchronization and tray-based acquisition.
+- A Python/Jupyter processing stack for flat-field correction, ENVI-to-analysis conversion, segmentation, and downstream disease modeling.
+
 ## Layout
 
 
@@ -10,7 +14,7 @@ This repository contains **hardware control software** and **processing / analys
 | `[hyperbird-proto/](hyperbird-proto/)`   | Linux C++ application: motion stage, camera (Andor), tray scanning, ENVI output.                                                                    |
 | `[hyperbird-studio/](hyperbird-studio/)` | Python/Jupyter: live processing watchers, flat-field and ENVI→Zarr pipeline, GSAM2 segmentation, calibration notebooks, disease-analysis notebooks. |
 | `data/`                                  | Optional place for shared datasets or symlinks (empty by default).                                                                                  |
-| `assets/`                                | Optional static assets (empty by default).                                                                                                          |
+| `assets/`                                | Project media assets (system photo and action video).                                                                                               |
 
 
 ## hyperbird-proto (scanner control)
@@ -33,3 +37,24 @@ This repository contains **hardware control software** and **processing / analys
 Single repository at this root. Nested `.git` directories under `hyperbird-proto` and `hyperbird-studio` were removed so everything is tracked here.
 
 Optional: configure [nbstripout](https://github.com/kynan/nbstripout) so `.gitattributes` strips notebook outputs on commit.
+
+## Assets
+
+Media for documentation and repository overview live in [`assets/`](assets/). **PNG and MP4** render on GitHub; **HEIC** is the optional camera-original still image.
+
+### System photo
+
+![HyperBird system](assets/hyperbird_system.png)
+
+| Format | File |
+| ------ | ---- |
+| **PNG** (preview) | [`assets/hyperbird_system.png`](assets/hyperbird_system.png) |
+| HEIC (original) | [`assets/hyperbird_system.heic`](assets/hyperbird_system.heic) |
+
+### In-action video
+
+<video src="assets/hyperbird_in_action.mp4" controls width="100%"></video>
+
+| Format | File |
+| ------ | ---- |
+| **MP4** (playback in browser) | [`assets/hyperbird_in_action.mp4`](assets/hyperbird_in_action.mp4) |
