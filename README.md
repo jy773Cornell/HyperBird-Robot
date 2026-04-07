@@ -3,17 +3,11 @@
 HyperBird is a high-throughput hyperspectral microscopic imaging platform for plant phenotyping, combining robotic sample scanning with automated spectral-image processing and analysis.
 
 <p align="center">
-  <img src="assets/hyperbird_system.png" alt="HyperBird system" width="80%">
+  <img src="assets/hyperbird_system.png" alt="HyperBird system" width="60%">
 </p>
 
 <p align="center">
-  <a href="assets/hyperbird_in_action.mp4">
-    <img src="assets/hyperbird_system.png" alt="Watch HyperBird in action (MP4)" width="80%">
-  </a>
-</p>
-
-<p align="center">
-  ▶️ <a href="assets/hyperbird_in_action.mp4"><strong>Watch HyperBird in action (MP4)</strong></a>
+  <video src="assets/hyperbird_in_action.mp4" controls preload="metadata" width="60%"></video>
 </p>
 
 ## Contents
@@ -26,7 +20,7 @@ HyperBird is a high-throughput hyperspectral microscopic imaging platform for pl
 | [`assets/`](assets/) | README media assets. |
 ## Sampel Images
 
-Leaf RGB examples from [`data_examples/leaf_samples_processed/`](data_examples/leaf_samples_processed/):
+Leaf RGB examples from [`data_examples/`](data_examples/leaf_samples_processed/):
 
 <table>
   <tr>
