@@ -7,7 +7,13 @@ HyperBird is a high-throughput hyperspectral microscopic imaging platform for pl
 </p>
 
 <p align="center">
-  <video src="assets/hyperbird_in_action.mp4" controls preload="metadata" width="60%"></video>
+  <a href="assets/hyperbird_in_action.mp4">
+    <img src="assets/hyperbird_in_action_preview.gif" alt="HyperBird in action (GIF preview)" width="60%">
+  </a>
+</p>
+
+<p align="center">
+  ▶️ <a href="assets/hyperbird_in_action.mp4"><strong>Open full video (MP4)</strong></a>
 </p>
 
 ## Contents
@@ -44,7 +50,7 @@ Leaf RGB examples from [`data_examples/`](data_examples/leaf_samples_processed/)
 
 - **Jinhong Yu**
 - Cornell AgriTech, Cornell University
-- Contact: `yujiang@cornell.edu`
+- Contact: `jy773@cornell.edu`
 
 ## Publication and Citation
 
