@@ -1,36 +1,89 @@
 # OS / editor
 .DS_Store
 Thumbs.db
+.idea/
 
 # Python
 .venv/
 venv/
 __pycache__/
 *.py[cod]
+*$py.class
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+*.egg-info/
+.eggs/
+dist/
+build/
+develop-eggs/
+*.egg
+MANIFEST
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+htmlcov/
+.tox/
+.coverage
+.hypothesis/
 
 # Environments & secrets
 .env
 .env.*
 !.env.example
 
-# C/C++ build (common for control / acquisition code)
-build/
-cmake-build-*/
-*.o
-*.a
-
 # Jupyter
 .ipynb_checkpoints/
+*-checkpoint.ipynb
+profile_default/
+ipython_config.py
 
-# Logs & temp
-*.log
-tmp/
+# Built scanner binary (run `make` in hyperbird-proto/)
+hyperbird-proto/hyperbird
+
+# C/C++ (proto + native extensions)
+*.d
+*.slo
+*.lo
+*.o
+*.obj
+*.gch
+*.pch
+*.so
+*.dylib
+*.dll
+*.mod
+*.smod
+*.lai
+*.la
+*.a
+*.lib
+*.out
+*.app
+cmake-build-*/
+
+# PyTorch / SAM2 checkpoints (download separately)
+*.pth
+*.pt
+hyperbird-studio/sam2/checkpoints/*.pt
+hyperbird-studio/sam2/outputs/
+hyperbird-studio/sam2/build/
+hyperbird-studio/sam2/_C.*
+
+# HyperBird proto — vendored / local deps (build xlnt into this path)
+hyperbird-proto/libs/
+hyperbird-proto/packages/
+hyperbird-proto/sheets/
+
+# Generated outputs
+outputs/
 temp/
+tmp/
+*.log
 
-# Large or local-only data — uncomment or extend as you organize folders
-# data/raw/
-# *.h5
-# *.tif
+# Optional large / local data at repo root (uncomment if needed)
+# /data/
+# /assets/
+
+# Trained sklearn models (often large; remove ignore if you want them versioned)
+# hyperbird-studio/models/*.joblib
